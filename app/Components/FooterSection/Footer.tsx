@@ -116,7 +116,7 @@ export default function Footer({}: Props) {
                     </p>
                   </Link>
                 </div>
-                <div className="w-fit h-full flex items-center">
+                <div className="w-fit h-full flex items-center bg-purple-300 pt-3">
                   <p className="text-xl text-zinc-500 text-center text-pretty">
                     © 2024 Helios Derma Clinic. All Rights Reserved
                   </p>
