@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import { ReactLenis, useLenis } from "@/app/libs/lenis";
+import Navbar from "./Components/Navbar/Navbar";
+import CustomCursor from "./Components/CustomCursor/CustomCursor";
+import { spaceGrotesk } from "./libs/fonts/fonts";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +18,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <ReactLenis root>
+        <body className={spaceGrotesk.className}>
+          <Navbar />
+          <CustomCursor />
+          {children}
+        </body>
+      </ReactLenis>
     </html>
   );
 }
