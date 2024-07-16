@@ -18,6 +18,7 @@ html {
 }
 
 body {
+  /* TODO: choose background color */
   background-color: #f8f3ef;
   overflow-x: clip;
 }

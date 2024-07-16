@@ -9,12 +9,3 @@ export const editorial = localFont({
     },
   ],
 });
-
-export const neueMontreal = localFont({
-  src: [
-    {
-      path: "../../../public/fontAssets/neueMontreal/PPNeueMontreal-Book.otf",
-      weight: "500",
-    },
-  ],
-});

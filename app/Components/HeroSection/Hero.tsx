@@ -3,10 +3,10 @@ import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import HeroImage from "@/public/images/hero_section/heroImage.jpg";
 import { useScroll, useTransform, motion, easeInOut } from "framer-motion";
-import { editorial } from "@/app/libs/fonts/localFonts";
 import ArrowIcon from "../Icons/ArrowIcon";
 import Link from "next/link";
 import useDimension from "@/app/hooks/useDimension";
+import { editorial } from "@/app/libs/fonts/localFonts";
 
 type Props = {};
 
