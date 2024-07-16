@@ -8,9 +8,7 @@ import { easeInOut } from "framer-motion/dom";
 import AboutUsText from "./AboutUsText";
 import useDimension from "@/app/hooks/useDimension";
 
-type Props = {
-  // fonts: NextFont[];
-};
+type Props = {};
 
 function AboutUs({}: Props) {
   const containerRef = useRef(null);
@@ -49,7 +47,7 @@ function AboutUs({}: Props) {
       <div className={`lg:min-h-[250vh] w-full flex `} ref={containerRef}>
         {/* Left Side */}
         <div className="lg:min-h-[250vh] w-full flex flex-col">
-          <div className="md:pl-48 lg:min-h-[200vh] flex flex-col justify-evenly">
+          <div className="lg:pl-48 lg:min-h-[200vh] flex flex-col justify-evenly">
             {/* Text 1 */}
             <div className="w-full min-h-[16rem] lg:min-h-[20rem]">
               <motion.h3
@@ -57,7 +55,7 @@ function AboutUs({}: Props) {
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.6, ease: "easeInOut" }}
                 viewport={{ margin: marginFromTop, once: true }}
-                className="text-4xl lg:text-6xl font-normal text-zinc-900 text-center lg:text-left text-pretty leading-tight tracking-tight"
+                className="text-4xl md:text-5xl lg:text-6xl font-normal text-zinc-900 text-center lg:text-left text-pretty leading-tight tracking-tight"
               >
                 Expert skin care with advanced treatments and a patient-centered
                 approach.
@@ -72,7 +70,7 @@ function AboutUs({}: Props) {
           <div className="min-h-[20svh] lg:min-h-[50vh] w-full"></div>
         </div>
         {/* Right Side */}
-        <div className=" hidden md:block min-h-[250vh] w-full relative">
+        <div className=" hidden lg:block min-h-[250vh] w-full relative">
           <div className="w-full h-screen sticky top-[10%]">
             <motion.div
               className="absolute bottom-0 right-0 w-3/4 h-3/4 mb-28"

@@ -40,7 +40,7 @@ function AboutUsText({ heading, para }: Props) {
   return (
     <div className="w-full min-h-[16rem] mb-5 lg:min-h-[20rem]">
       <div className="w-full h-2/4 flex justify-center lg:justify-normal items-end lg:items-start overflow-hidden ">
-        <p className="text-7xl lg:text-[8rem] font-semibold text-zinc-900 ">
+        <p className="text-7xl md:text-8xl lg:text-[8rem] font-semibold text-zinc-900 ">
           <span className="sr-only">{heading}</span>
           <motion.span
             aria-hidden
@@ -67,7 +67,7 @@ function AboutUsText({ heading, para }: Props) {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="text-4xl lg:text-[3rem] font-light text-zinc-700"
+          className="text-4xl md:text-[2.75rem] lg:text-5xl font-light text-zinc-700"
         >
           {para}
         </motion.p>
