@@ -49,7 +49,7 @@ export default function HamburgerButton({ nav_links }: Props) {
             animate={{ x: 0 }}
             transition={{ duration: 0.6, ease: "easeInOut" }}
             exit={{ x: 1000 }}
-            className="fixed top-16 inset-0 z-40 bg-[#131313] overflow-y-hidden"
+            className="fixed top-16 inset-0 z-50 bg-[#131313] overflow-y-hidden"
           >
             <ul className="w-full h-full flex flex-col justify-start items-center space-y-10 py-10 text-zinc-50">
               {nav_links.map((nav_link) => {

@@ -52,7 +52,7 @@ function SmallScreenTestimonial({}: Props) {
               whileInView="visible"
               viewport={{ margin: "-100px", once: true }}
               key={review.name}
-              className="w-3/4 overflow-hidden rounded-2xl bg-zinc-50 shadow-lg p-5 py-8 md:h-[25vh] md:w-[30%]"
+              className="w-3/4 overflow-hidden rounded-2xl bg-zinc-50 shadow-lg p-5 py-8 md:min-h-[25vh] md:w-[30%]"
             >
               <div className="flex h-full w-full flex-col space-y-5">
                 {/* Review Text */}

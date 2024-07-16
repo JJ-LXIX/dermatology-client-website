@@ -40,7 +40,7 @@ export default function Footer({}: Props) {
               </div>
 
               <div className="h-full w-full lg:w-1/2 pt-0">
-                <div className="w-full h-full flex justify-end space-x-20 px-5 py-5">
+                <div className="w-full h-full flex space-x-20 py-5 lg:justify-end">
                   {/* TODO: add next link */}
                   <ul className="flex flex-col h-full space-y-2">
                     <li>
@@ -116,7 +116,7 @@ export default function Footer({}: Props) {
                     </p>
                   </Link>
                 </div>
-                <div className="w-fit h-full flex items-center pt-3">
+                <div className="w-fit h-full flex items-center pt-3 mx-auto lg:mx-0">
                   <p className="text-xl text-zinc-500 text-center text-pretty">
                     © 2024 Helios Derma Clinic. All Rights Reserved
                   </p>

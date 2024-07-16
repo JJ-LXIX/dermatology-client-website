@@ -6,7 +6,7 @@ import LargeScreenTestimonial from "./LargeScreenTestimonial";
 type Props = {};
 
 export default function TestimonialSection({}: Props) {
-  const { isMobile, isSmallScreen } = useDimension();
+  const { isSmallScreen } = useDimension();
 
   return (
     <>
