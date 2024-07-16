@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
-import { ReactLenis, useLenis } from "@/app/libs/lenis";
+import { ReactLenis } from "@/app/libs/lenis";
 import Navbar from "./Components/Navbar/Navbar";
 import CustomCursor from "./Components/CustomCursor/CustomCursor";
-import { spaceGrotesk } from "./libs/fonts/fonts";
+import { spaceGrotesk, montserrat } from "./libs/fonts/fonts";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,7 +19,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ReactLenis root>
-        <body className={spaceGrotesk.className}>
+        {/* TODO: choose font */}
+        <body className={montserrat.className}>
           <Navbar />
           <CustomCursor />
           {children}
